@@ -26,7 +26,7 @@ public class UsuarioRepository {
     public void agregar(Usuarios nuevo){
         usuarios.add(nuevo);
         try{
-            guardar();
+            guardare();
         }catch (RuntimeException e){
             usuarios.remove(nuevo);
         }
